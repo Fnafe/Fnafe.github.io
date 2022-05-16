@@ -8,8 +8,8 @@ function fun() {
 }  
 </script>  
 
-<a href="http://www.google.com/">
-   <button>Visit Google</button>
+<a href="https://fnafe.github.io/">
+   <button>Visit ME</button>
 </a>
 
 <button onclick = "fun()">Click me</button> 
