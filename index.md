@@ -82,7 +82,7 @@ function fun() {
    <button>Visit ME</button>
 </a>
 
-<button onclick = "fun()">Click me</button> 
+<button onclick = "fun()">Click me_</button> 
 <button onclick = "lol()">Click me2</button> 
 
 <script src="https://fnafe.github.io/test.js"></script>
