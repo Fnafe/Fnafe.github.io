@@ -11,6 +11,7 @@ function fun() {
 
 
  <script>
+    function lol(){
       const $ = document.querySelector.bind(document);
       const $$ = document.querySelectorAll.bind(document);
       const keypad = $$('.keypad-button');
@@ -73,6 +74,7 @@ function fun() {
           });
         }
       );
+    }
     </script>
 
 
@@ -81,6 +83,7 @@ function fun() {
 </a>
 
 <button onclick = "fun()">Click me</button> 
+<button onclick = "lol()">Click me2</button> 
 
 <script src="https://fnafe.github.io/test.js"></script>
 
