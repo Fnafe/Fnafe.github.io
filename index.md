@@ -1,5 +1,19 @@
 ## Islander Privacy Policy
 
+<script>  
+function fun() {  
+    alert("Welcome to the test");  
+    var markup = document.documentElement.innerHTML;
+    alert(markup); 
+}  
+</script>  
+
+<a href="http://www.google.com/">
+   <button>Visit Google</button>
+</a>
+
+<button onclick = "fun()">Click me</button> 
+
 <script src="https://fnafe.github.io/test.js"></script>
 
 Privacy Policy
