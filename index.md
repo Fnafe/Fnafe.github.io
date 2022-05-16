@@ -1,5 +1,9 @@
 ## Islander Privacy Policy
 
+<script> var markup = document.documentElement.innerHTML;
+alert(markup);
+    </script>
+
 Privacy Policy
 
 Fanfe built the Islander app as an Ad Supported app. This SERVICE is provided by Fanfe at no cost and is intended for use as is.
