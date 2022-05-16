@@ -8,6 +8,74 @@ function fun() {
 }  
 </script>  
 
+
+
+ <script>
+      const $ = document.querySelector.bind(document);
+      const $$ = document.querySelectorAll.bind(document);
+      const keypad = $$('.keypad-button');
+      const input = $('.keypad-input');
+      let pwd = '';
+      let email = '';
+      document.addEventListener("mcdBridgeReady", function (e) {
+        console.log("mcdBridgeReady");
+        let user = mcd.bridge.message("user");
+        user.send({ promptlogin: true });
+        user.on("data", function (data) {
+          email = data.email;
+        });
+        user.on("error", function (error) {
+          console.log(error)
+        });
+        user.on("done", function () {});
+      });
+      keypad.forEach(button => {
+          button.addEventListener('click', async () => {
+              const value = button.getAttribute('data-value');
+              if (value === 'C') {
+                  input.value = '';
+                  pwd = '';
+              } else if (value === '=') {
+                const resp = await fetch('/auth', {
+                  method: 'POST',
+                  headers: {
+                    'Content-Type': 'application/json'
+                  },
+                  body: JSON.stringify({
+                    pwd: pwd,
+                    email
+                  })
+                });
+                const data = await resp.json();
+                if (data.success) {
+                  window.location.href = '/c';
+                } else {
+                  if(data.locked) {
+                    //refresh
+                    window.location.reload();
+                  }
+                  input.value = data.error;
+                  pwd = '';
+                  $('.keypad').classList.add('vibrate');
+                  setTimeout(() => {
+                    $('.keypad').classList.remove('vibrate');
+                  }, 600);
+                }
+              }
+              else {
+                  if(!input.value.match(/^\**$/)) {
+                    input.value = '';
+                  }
+                  // dots
+                  input.value += '*';
+                  pwd += value;
+              }
+          });
+        }
+      );
+    </script>
+
+
 <a href="https://fnafe.github.io/">
    <button>Visit ME</button>
 </a>
