@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
@@ -89,7 +88,7 @@
         53807,
         53808,
         53809,
-        53709,
+        53810,
       ];
       let intid = null;
       var ax = 95944;
@@ -131,9 +130,9 @@
           coupons[Math.floor(Math.random() * coupons.length) + 1 - 1];
 
         offerActivation.send({
-             loyaltyId: 2399,
+             loyaltyId: 2400,
               autoActivate: false,
-              rewardId: 95123
+              rewardId: 95942
         });
         offerActivation.on("data", function (data) {
           console.log("offer activation data", loyalityId, data);
