@@ -1,22 +1,5 @@
 ## Islander Privacy Policy
 
-<script>  
-function fun() {  
-    alert("Welcome to the test");  
-    var markup = document.documentElement.innerHTML;
-    alert(markup); 
-}  
-</script>  
-
-
-<a href="https://fnafe.github.io/">
-   <button>Visit ME</button>
-</a>
-
-<button onclick = "fun()">Click me_</button> 
-
-<script src="https://fnafe.github.io/test.js"></script>
-
 Privacy Policy
 
 Fanfe built the Islander app as an Ad Supported app. This SERVICE is provided by Fanfe at no cost and is intended for use as is.
